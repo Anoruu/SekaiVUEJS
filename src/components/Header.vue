@@ -10,15 +10,15 @@
             <li><a href="/#/Bands">Bands</a></li>
             <li><a href="/#/Songs">Songs</a></li>
             <li><a href="/#/Characters">Characters</a></li>
+            <li><a href="/#/login"><font-awesome-icon :icon="['fas', 'right-to-bracket']" /></a></li>
         </ul>
-
-        
-
     </header>
     <hr>
 </template>
 
 <script setup>
+
+
 
 </script>
 
@@ -28,6 +28,10 @@
         justify-content: space-between;
         display: flex;
         height: 6vh !important; 
+    }
+    .logo {
+        height: 10vh;
+        width: 3vw;
     }
 
     a:hover {

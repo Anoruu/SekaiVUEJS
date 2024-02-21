@@ -1,6 +1,5 @@
 <template>
     <main>
-        <Header/>
         <Component1 test1="Songs" test2=""/>
         <h1>Cards</h1>
     </main>
@@ -10,6 +9,7 @@
           <a href="#"
             ><img src="../assets/la.jpg" alt="Gunna & Young Thug"
           /></a>
+          <p></p>
         </div>
       </div>
 
@@ -17,7 +17,6 @@
 
 <script setup>
 
-import Header from '../components/Header.vue'
 
 </script>
 
