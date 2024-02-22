@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
-import LandingPage from './pages/landingpage.vue'
+import LandingPage from './pages/LandingPage.vue'
 import Bands from './pages/Bands.vue'
 import Cards from './pages/Cards.vue'
 import Characters from './pages/Characters.vue'
