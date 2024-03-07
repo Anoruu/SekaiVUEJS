@@ -1,6 +1,6 @@
 <template>
   <div class="carte">
-    <div class="image">
+    <div class="bandimage">
       <a href="#"><img :src="imgLink" :alt="altText" /></a>
       <p> {{ bandText }} </p>
     </div>
@@ -24,11 +24,11 @@ defineProps({
 
   &:hover {
     
-   .image a {
+   .bandimage a {
       opacity: 0.33;
     }
 
-    .image p {
+    .bandimage p {
       display: block;
       z-index: 1;
       text-align: center;
@@ -44,7 +44,7 @@ p {
   display: none;
 }
 
-.image {
+.bandimage {
   position: relative;
   justify-content: center;
   align-items: center;
@@ -63,4 +63,3 @@ p {
 
 }
 </style>
-

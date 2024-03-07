@@ -1,15 +1,15 @@
 <template>
     <div class="buttons">
-        <button>Login</button>
-        <button>Sign-in</button>
+        <button @click="showLoginForm" class="login__button">Login</button>
+        <button @click="showSignInForm" class="signup__button">Sign-in</button>
     </div>
-    <main class="login__main">
+    <main v-if="showLogin" class="login__main">
         <section class="login__form">
             <h1>Login Page</h1>
             <FormComponent :inputs="logInInputs"/>
         </section>
     </main>
-    <div class="signin__main">
+    <div v-if="showSignin" class="signin__main">
         <section class="signin__form">
             <h1>Sign-in Page</h1>
             <signInComponent :inputs="signInInputs"/>
@@ -22,14 +22,23 @@
 import { Register } from '../services/apollo';
 import FormComponent from '../components/loginForm.vue'
 import signInComponent from '../components/signInForm.vue'
-import { onMounted } from 'vue';
+import { onMounted, ref } from 'vue';
 
-onMounted(() =>{
-    Register.storeUser({
-    username:'LucienJ',
-    password:'ojezofjozjfozf',
-})
-})
+defineProps({
+  formInputs: {
+    type: Array,
+    default: () => []
+  }
+});
+
+//onMounted(() =>{
+//    Register.storeUser({
+//    username:'Lucientest',
+//    password:'feohnuzobjndop',
+//})
+//})
+
+
 
 const logInInputs = [
     {
@@ -66,6 +75,19 @@ const signInInputs = [
         type:'button'
     }
 ]
+
+const showLogin = ref(true); 
+const showSignin = ref(false); 
+
+function showSignInForm() {
+    showLogin.value = false;
+    showSignin.value = true;
+}
+
+function showLoginForm() {
+    showLogin.value = true;
+    showSignin.value = false;
+}
 
 </script>
   

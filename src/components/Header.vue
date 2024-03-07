@@ -1,7 +1,7 @@
 <template>
     <header>
         <div class="LogoTitle">
-        <img class="logo" src="https://media.vgm.io/releases/15/13951/13951-1633165472.png" alt="Website logo">
+        <a href="/#/"><img class="logo" src="https://media.vgm.io/releases/15/13951/13951-1633165472.png" alt="Website logo"></a>
         
         <p>PJS Viewer</p>
         </div>
