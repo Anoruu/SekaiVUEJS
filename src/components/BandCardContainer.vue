@@ -18,7 +18,6 @@ defineProps({
 
 <style lang="scss" scopped>
 .carte {
-  border-color: aqua;
   border: 10px;
   overflow: hidden;
   border-radius: 1%;
@@ -32,6 +31,9 @@ defineProps({
     .image p {
       display: block;
       z-index: 1;
+      text-align: center;
+      padding: 0 10%;
+      font-size: x-large;
     }
 
   }
