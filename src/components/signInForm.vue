@@ -1,7 +1,7 @@
 <template>
     <form @submit.prevent="handleSubmit">
       <article v-for="(el, index) in inputs" :key="index">
-        <input class="input__form" :type="el.type" :placeholder="el.placeholder" :id="el.name" v-model="formData[el.name]">
+        <input required class="input__form" :type="el.type" :placeholder="el.placeholder" :id="el.name" v-model="formData[el.name]">
       </article>
       <button type="submit" class="input__button">Submit</button>
     </form>
@@ -26,9 +26,11 @@
   try {
     await Register.storeUser(formData.value);
     signInSuccess.value = true;
+    signInFailure.value = false;
   } catch (error) {
     console.error(error);
     signInFailure.value = true;
+    signInSuccess.value = false;
   }
 };
   

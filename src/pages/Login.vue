@@ -19,10 +19,9 @@
   
 <script setup>
 
-import { Register } from '../services/apollo';
 import FormComponent from '../components/loginForm.vue'
 import signInComponent from '../components/signInForm.vue'
-import { onMounted, ref } from 'vue';
+import { ref } from 'vue';
 
 defineProps({
   formInputs: {

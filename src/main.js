@@ -28,7 +28,8 @@ const routes = [
   { path: '/cards', component: Cards },
   { path: '/bands', component: Bands },
   { path: '/login', component: Login },
-  { path: '/characters', component: Characters }
+  { path: '/characters', component: Characters },
+  { path: '/:pathMatch(.*)', component: LandingPage }
 ]
 
 const router = createRouter({

@@ -29,10 +29,7 @@
         display: flex;
         height: 6vh !important; 
     }
-    .logo {
-        height: 10vh;
-        width: 3vw;
-    }
+    
 
     a:hover {
         text-decoration: underline;
@@ -56,6 +53,7 @@
         margin: 0 5px 0 5px
     }
     .logo{
-        height: 100%;
+        width: 60px;
+        height: 60px;
     }
 </style>
